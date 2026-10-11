@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 220" width="100%" height="100%" fill="none">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,500;1,700&amp;family=Instrument+Serif:ital@0;1&amp;display=swap');
+      .logo-speak {
+        font-family: 'Playfair Display', 'Instrument Serif', 'Didot', 'Bodoni MT', 'Georgia', serif;
+        font-size: 78px;
+        font-weight: 800;
+        fill: #181818;
+        letter-spacing: -2px;
+      }
+      .logo-with {
+        font-family: 'Playfair Display', 'Instrument Serif', 'Georgia', serif;
+        font-size: 27px;
+        font-style: italic;
+        font-weight: 500;
+        fill: #181818;
+      }
+      .logo-anshika {
+        font-family: 'Playfair Display', 'Instrument Serif', 'Didot', 'Bodoni MT', 'Georgia', serif;
+        font-size: 88px;
+        font-weight: 800;
+        fill: #181818;
+        letter-spacing: -2px;
+      }
+    </style>
+  </defs>
+
+  <!-- Top Line: Speak -->
+  <g transform="translate(0, 0)">
+    <text x="82" y="80" class="logo-speak">Speak</text>
+
+    <!-- Terracotta Speech Bubble Badge -->
+    <g transform="translate(290, 48)">
+      <path d="M 0 0 C 0 -13 11 -23 24 -23 C 37 -23 48 -13 48 0 C 48 13 37 23 24 23 C 19 23 14 21 10 18 L 1 23 L 3 14 C 1 10 0 5 0 0 Z" fill="#DC725E"/>
+      <!-- Three White Dots -->
+      <circle cx="16" cy="0" r="2.8" fill="#FFFFFF"/>
+      <circle cx="24" cy="0" r="2.8" fill="#FFFFFF"/>
+      <circle cx="32" cy="0" r="2.8" fill="#FFFFFF"/>
+    </g>
+  </g>
+
+  <!-- Middle Divider: — with — -->
+  <g transform="translate(0, 114)">
+    <line x1="126" y1="-7" x2="164" y2="-7" stroke="#181818" stroke-width="1.2" stroke-linecap="round"/>
+    <text x="210" y="0" text-anchor="middle" class="logo-with">with</text>
+    <line x1="256" y1="-7" x2="294" y2="-7" stroke="#181818" stroke-width="1.2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Bottom Line: Anshika with flourished capital -->
+  <g transform="translate(0, 0)">
+    <text x="210" y="184" text-anchor="middle" class="logo-anshika">Anshika</text>
+
+    <!-- Warm Terracotta Underline Stroke -->
+    <path d="M 128 206 C 165 196 230 191 292 195 C 238 195 174 200 128 206 Z" fill="#DC725E"/>
+    <path d="M 126 206 C 172 195 240 190 292 195" stroke="#DC725E" stroke-width="3.2" stroke-linecap="round"/>
+  </g>
+</svg>

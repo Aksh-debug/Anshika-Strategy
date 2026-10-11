@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <!-- Outer Gold Ring Gradients -->
+    <linearGradient id="goldRim" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E2C98D" />
+      <stop offset="35%" stop-color="#C29B4D" />
+      <stop offset="70%" stop-color="#E8D4A2" />
+      <stop offset="100%" stop-color="#A67B2E" />
+    </linearGradient>
+
+    <!-- Inner Rich Terracotta / Cognac Radial Gradient -->
+    <radialGradient id="sealCenter" cx="45%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#B85D36" />
+      <stop offset="45%" stop-color="#A24622" />
+      <stop offset="85%" stop-color="#7C3014" />
+      <stop offset="100%" stop-color="#581F0B" />
+    </radialGradient>
+
+    <!-- Subtle 3D Shadow for Center Disk -->
+    <filter id="diskShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#3A170A" flood-opacity="0.35" />
+    </filter>
+
+    <!-- Outer Soft Glow Shadow -->
+    <filter id="badgeShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#181818" flood-opacity="0.18" />
+    </filter>
+
+    <!-- Circular Text Paths -->
+    <!-- Top Arc Path: clock-wise along top half for "30-DAY MONEY-BACK GUARANTEE" -->
+    <path id="topTextArc" d="M 55,200 A 145,145 0 1,1 345,200" fill="none" />
+    <!-- Bottom Arc Path: clock-wise along bottom half for "COACH WITH CONFIDENCE" -->
+    <path id="bottomTextArc" d="M 345,200 A 145,145 0 0,1 55,200" fill="none" />
+  </defs>
+
+  <g filter="url(#badgeShadow)">
+    <!-- Base White / Ivory Outer Ring -->
+    <circle cx="200" cy="200" r="190" fill="#FDFBF7" stroke="url(#goldRim)" stroke-width="4" />
+    
+    <!-- Outer Inset Gold Hairline -->
+    <circle cx="200" cy="200" r="183" fill="none" stroke="#C5A059" stroke-width="1.2" opacity="0.85" />
+
+    <!-- Circular Curved Text -->
+    <!-- Top Arc Text -->
+    <text font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="12" font-weight="700" fill="#6E4D1D" letter-spacing="4.5">
+      <textPath href="#topTextArc" startOffset="50%" text-anchor="middle">
+        ✦ 30-DAY MONEY-BACK GUARANTEE ✦
+      </textPath>
+    </text>
+
+    <!-- Bottom Arc Text -->
+    <text font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="12" font-weight="700" fill="#6E4D1D" letter-spacing="4.5">
+      <textPath href="#bottomTextArc" startOffset="50%" text-anchor="middle">
+        COACH WITH CONFIDENCE
+      </textPath>
+    </text>
+
+    <!-- Inner Border Ring (Separating cream ring from center disk) -->
+    <circle cx="200" cy="200" r="115" fill="none" stroke="url(#goldRim)" stroke-width="3" />
+    <circle cx="200" cy="200" r="111" fill="none" stroke="#FDFBF7" stroke-width="1.5" opacity="0.6" />
+
+    <!-- Center Deep Terracotta Disk -->
+    <g filter="url(#diskShadow)">
+      <circle cx="200" cy="200" r="110" fill="url(#sealCenter)" />
+    </g>
+
+    <!-- Inner Dotted / Stitched Accent Ring -->
+    <circle cx="200" cy="200" r="102" fill="none" stroke="#E6C88A" stroke-width="1.2" stroke-dasharray="2.5 3.5" opacity="0.55" />
+
+    <!-- Gold Minimalist Checkmark -->
+    <path d="M 188 126 L 198 136 L 213 118" fill="none" stroke="#E8CF96" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" />
+
+    <!-- Center "30" Big Serif Display -->
+    <text x="200" y="218" text-anchor="middle" font-family="'Instrument Serif', Georgia, serif" font-size="88" font-weight="400" fill="#FFFFFF" letter-spacing="-1">
+      30
+    </text>
+
+    <!-- "day guarantee" Cursive / Italic Serif -->
+    <text x="200" y="248" text-anchor="middle" font-family="'Instrument Serif', Georgia, serif" font-style="italic" font-size="25" fill="#FFFFFF" letter-spacing="0.5">
+      day guarantee
+    </text>
+
+    <!-- "MONEY BACK" Clean Geometric All-Caps -->
+    <text x="200" y="274" text-anchor="middle" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="9.5" font-weight="700" fill="#E8CF96" letter-spacing="3.2">
+      MONEY BACK
+    </text>
+  </g>
+</svg>

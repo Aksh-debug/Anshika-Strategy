@@ -1,0 +1,55 @@
+@import "tailwindcss";
+@import "./styles/fonts.css";
+@import "./styles/theme.css";
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (min-width: 1024px) {
+  html {
+    scroll-snap-type: y mandatory;
+  }
+
+  .snap-section {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+  }
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: #EBE6DA;
+  color: #181818;
+  overflow-x: clip;
+}
+
+/* Custom scrollbar for sleek editorial vibe */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #EBE6DA;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #DDD4C6;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #AC4C30;
+}
+
+/* Hide scrollbar across all devices & browsers (WebKit, Firefox, Edge, iOS, Android) */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
